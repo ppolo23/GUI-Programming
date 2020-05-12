@@ -1,0 +1,98 @@
+<mat-grid-list cols="4" rowHeight="50px">
+  <mat-grid-tile colspan="4" rowspan="1">
+     <div class="title">
+        <h4>Data</h4>
+     </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="3">
+    <mat-list>
+      <mat-list-item>
+        <label>Name:</label>
+        <label class="data">Pedro</label>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Last name:</label>
+        <label class="data">Polo</label>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Name of the father:</label>
+        <label class="data"> - </label>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="3">
+    <mat-list>
+      <mat-list-item>
+        <label>Place of birth:</label>
+        <label class="data"> - </label>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Date of birth:</label>
+        <label class="data"> - </label>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Pesel identifier:</label>
+        <label class="data"> - </label>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4" rowspan="1">
+    <div class="title">
+      <h4>Address for correspondance</h4>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="4">
+    <mat-list>
+      <mat-list-item>
+        <label>Street</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{street}}">
+        </mat-form-field>
+      </mat-list-item>
+      <mat-list-item>
+        <label>House number</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{houseNumber}}">
+        </mat-form-field>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Flat number</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{flatNumber}}">
+        </mat-form-field>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Postal code</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{postalCode}}">
+        </mat-form-field>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="4">
+    <mat-list>
+      <mat-list-item>
+        <label>Place</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{place}}">
+        </mat-form-field>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Province</label>
+        <mat-form-field class="data">
+          <input matInput [formControl]="ctrl" value="{{province}}">
+        </mat-form-field>
+      </mat-list-item>
+      <mat-list-item>
+        <label>Address confirmed</label>
+        <label class="data">{{confirmed}}</label>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4" rowspan="2">
+    <button mat-raised-button color="primary" (click)="changeForm()">{{buttonText}}</button>
+    <div *ngIf="editButton">
+        <button class="button" mat-raised-button color="primary" (click)="changeForm()">Confirm</button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

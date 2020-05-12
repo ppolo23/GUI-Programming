@@ -1,0 +1,36 @@
+<h3>Student Area</h3>
+<mat-tab-group>
+  <mat-tab label="Personal Data">
+    <app-personal-data></app-personal-data>
+  </mat-tab>
+  <mat-tab label="Account number for payments">
+
+    <h4>
+      Deposit account number for album {{user}}
+    </h4>
+    <br/>
+    <div class="content">
+      <p>
+        <span class="advert">Attention!</span> Student's house fees should be paid to the account number generated in the 'Student's House'
+        bookmark.
+      </p>
+      <p>
+        The account number below is used to make all payments related to the given album.
+        This number applies to all courses of study assigned to a given album.
+      </p>
+      <p>
+        New account number:  <strong>XXXXXXXXX</strong>
+      </p>
+      <p>
+          When making a transfer please enter in the recipient's name:
+          <strong>Center for International Education at the Lodz University of Technology ul. Żwirki 36</strong>
+      </p>
+    </div>
+  </mat-tab>
+  <mat-tab label="Information"> 
+    <app-student-info></app-student-info>
+  </mat-tab>
+  <mat-tab label="Report card">
+    <app-report-card></app-report-card>
+  </mat-tab>
+</mat-tab-group>

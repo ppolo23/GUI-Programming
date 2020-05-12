@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="headContent">
+    <div class="headline">
+      <h1 class="title">Arcade Game</h1>
+      <h2>Best online retro game</h2>
+    </div>
+    <div class="button">
+      <button mat-raised-button style="background-color:#424242" (click)="enterGame()">ENTER</button>
+    </div>
+  </div>
+</header>
+<div class="infoContent">
+  <mat-grid-list cols="2" rowHeight="400px">
+    <mat-grid-tile>
+      <div class="leftCol">
+        <img src="../../../images/retroTennis.jpg" width="350" height="300">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="description rightCol">
+        <h2>Play the best online arcade game</h2>
+        <p>The game that changed the industry of games</p>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="description leftCol">
+        <h2>Challenge your friends</h2>
+        <p>Play online or in your own computer</p>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="rightCol">
+        <img src="../../../images/1vs1players.jpg" width="450" height="300">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="leftCol">
+        <img src="../../../images/top1Award.png" width="350" height="350">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="description rightCol">
+        <h2>Become the best player</h2>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div class="bottomButton" align="center">
+    <button mat-raised-button style="background-color:#424242" (click)="enterGame()">ENTER</button>
+  </div>
+</div>
+<app-footer></app-footer>

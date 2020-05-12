@@ -1,0 +1,27 @@
+.toggle {
+    margin-left: 50px;
+}
+
+.slide {
+    margin-left: 10px;
+}
+
+.container {
+    margin-top:25%;
+}
+
+.mat-expansion-panel {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color:#e6ffff;
+
+}
+
+.mat-panel-title {
+    font-weight: bold;
+}
+
+.mat-accordion {
+    width: 40%;
+}

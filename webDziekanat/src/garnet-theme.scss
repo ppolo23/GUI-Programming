@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$garnet-theme-primary: mat-palette($mat-red,A800);
+$garnet-theme-accent:  mat-palette($mat-grey, 500);
+$garnet-theme-warn: mat-palette($mat-amber);
+
+$garnet-theme: mat-light-theme($garnet-theme-primary, $garnet-theme-accent, $garnet-theme-warn);
+
+@include angular-material-theme($garnet-theme);

@@ -1,0 +1,42 @@
+<mat-toolbar class="mat-elevation-z6" color="primary">
+    <img src="../../../images/mainLogo2.png" height="40" width="40">
+  <button mat-button  (click) ="homeLink()">
+      <span class="title">Arcade Game</span>
+  </button>
+  <div class="buttons">
+    <button mat-button>Tutorials</button>
+    <button mat-button>Online Players</button>
+    <!-- <i class="material-icons">video_library</i> -->
+    <button mat-button>Youtube</button>
+  </div>
+  <div class="loggedName" *ngIf="logged; else loginTemplate">{{user}}</div>
+  <ng-template #loginTemplate>
+    <a class="loginButton" (click)="openDialog()">
+      <i class="material-icons icon">account_circle</i>
+    </a>
+    <a (click)="openDialog()">
+      <span class="logText">Login</span>
+    </a>
+  </ng-template>
+  <div class="menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <div *ngIf="logged">
+        <button mat-menu-item>
+          <mat-icon>highlight_off</mat-icon>
+          <span>Logout</span>
+        </button>
+      </div>
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>help</mat-icon>
+        <span>Help</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

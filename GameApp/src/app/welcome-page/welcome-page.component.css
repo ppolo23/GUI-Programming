@@ -1,0 +1,52 @@
+header{
+    background-color: #7b1fa2;
+    /*9c27b0*/
+}
+
+.headContent{
+    height: 330px;
+    padding-top: 60px;
+    text-align:center
+}
+
+.headline{
+    color:white;
+    padding-top: 50px;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+    margin: 15px 5px;
+} 
+
+.button {
+    padding-top: 40px;
+}
+
+.infoContent {
+    color: white;
+}
+
+.leftCol {
+    position: absolute;
+    right: 10px
+}
+
+.rightCol{
+    position: absolute;
+    left: 20px;
+}
+
+.description {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottomButton {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

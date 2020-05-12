@@ -1,0 +1,66 @@
+<div class="time">
+  <p>Time Played: <strong>{{time | date:'mm:ss'}}</strong></p>
+</div>
+<div class="controller">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Controllers
+        </mat-panel-title>
+        <mat-panel-description>
+          Keys to press
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-grid-list cols="3" rowHeight="50px">
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile>
+          <span>Player 1</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>Player 2</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>UP</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>Q</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>O</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>DOWN</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>W</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>P</span>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+<div class="player1">
+  <div class="playerName1">
+    <span class="textName">> {{player1}}</span>
+  </div>
+</div>
+<div class="player2">
+  <div class="playerName2">
+    <span class="textName">> {{player2}}</span>
+  </div>
+</div>
+<div class="board" align="center">
+  <svg id="svg" width="450" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <g class="board">
+      <rect fill="#424242" height="500" width="450" id="board" stroke="#000000" stroke-width="2" x="0" y="0" />
+      <text id="points1" x="100" y="45" fill="white" font-size="40"></text>
+      <text id="points2" x="350" y="45" fill="white" font-size="40"></text>
+    </g>
+  </svg>
+</div>
+<div class="exit">
+  <button mat-raised-button color="primary" (click)="finish();">Finish</button>
+</div>

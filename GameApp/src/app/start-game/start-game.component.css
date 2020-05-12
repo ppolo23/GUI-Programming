@@ -1,0 +1,15 @@
+.buttons {
+    margin-top: 15%;
+}
+
+.selection {
+    margin: 30px;
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 155px;
+}
+
+.selection:hover{
+    transform: scale(1.5);
+}

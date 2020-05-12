@@ -1,0 +1,64 @@
+.title .buttons{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.buttons {
+    margin-left: 5%;
+}
+.material-icons {
+    margin-right: 1%;
+}
+
+.loginButton {
+    position: absolute;
+    right: 90px;
+}
+
+.loginButton, .logText {
+    cursor: pointer;
+}   
+
+.icon{
+    margin-top: 5%;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.logText {
+    position: absolute;
+    font-size: 14px;
+    right: 52px;
+    top: 18px;
+}
+
+.menu {
+    right: 8px;
+    position: absolute;
+}
+
+.loggedName {
+    position: absolute;
+    right: 70px;
+    border-radius: 30px;
+    background: #424242;
+    width: 200px;
+    height: 40px; 
+    font-size: 15px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+  }
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}

@@ -1,0 +1,18 @@
+.icon {
+    font-size: 20px;
+}
+
+input {
+    font-size: 18px;
+}
+
+.loginContainer > mat-form-field , .registerContainer > mat-form-field {
+    width: 70%;
+    margin-left: 13%;
+    margin-block-start: 4%;
+    font-size: 18px;
+}
+
+.registerContainer > * {
+    width: 70%;
+}

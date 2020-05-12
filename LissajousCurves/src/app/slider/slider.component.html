@@ -1,0 +1,18 @@
+<mat-slider #slidey 
+color = "primary"
+aria-label="Basic slider" 
+class="slider" [value]="value" 
+[(ngModel)]="value" 
+[min]="min" [max]="max" [step]="step"
+(input)="onInputChange($event)"
+[matTooltip]="info" 
+matTooltipPosition="after">
+</mat-slider>
+<input #myInput type="number" [(ngModel)]="value"  
+[value]="value"
+[min]="min" [max]="max" [step]="step"
+[disabled]="disabled"
+class="input"
+(keyup)="onClicked($event, myInput.value)"
+(click)="onClicked($event, myInput.value)">
+<!--{{slidey.value}}-->

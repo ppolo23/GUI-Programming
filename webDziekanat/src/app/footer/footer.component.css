@@ -1,0 +1,32 @@
+.footer {
+  background: #9e9e9e;
+  height: 150px;
+  width: 100%;
+  bottom: 0%;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+}
+
+.logotype{
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.link {
+  margin-left: 1%;
+  color: white;
+}
+
+
+.link:hover {
+  color: #771e18;
+}

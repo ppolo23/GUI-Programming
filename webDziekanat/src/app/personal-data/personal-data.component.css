@@ -1,0 +1,17 @@
+.data {
+    margin-left: 10%;
+}
+
+.title {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+}
+
+.button {
+    margin-left: 10px;
+}
+
+label {
+    width: 200px;
+}

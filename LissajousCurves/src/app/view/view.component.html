@@ -1,0 +1,47 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
+<mat-grid-list cols="2" rowHeight="450px">
+  <mat-grid-tile>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Parameters
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="buttons">
+          <div>
+            <label>A </label>
+            <app-slider class="slide" [value]="A" info="Amplitude in x direction" max="300" min="1" step="1" (valueChanged)="AChanged($event)" (inputChanged)="AChanged($event)"></app-slider>
+          </div>
+          <div>
+            <label>B </label>
+            <app-slider class="slide" [value]="B" info="Amplitude in y direction" max="300" min="1" step="1" (valueChanged)="BChanged($event)" (inputChanged)="BChanged($event)"></app-slider>
+          </div>
+          <div>
+            <label>a </label>
+            <app-slider class="slide" [value]="a" info="Determines the number of horizontally aligned 'lobes'" max="20" min="1" step="1"
+              (valueChanged)="aChanged($event)" (inputChanged)="aChanged($event)"></app-slider>
+          </div>
+          <div>
+            <label>b </label>
+            <app-slider class="slide" [value]="b" info="Determines the number of vertically aligned 'lobes'" max="20" min="1" step="1"
+              (valueChanged)="bChanged($event)" (inputChanged)="bChanged($event)"></app-slider>
+          </div>
+          <div>
+            <label>phi </label>
+            <app-slider disabled = "disabled" [value]="phi" info="Phase angle" max="2" min="0" step="0.01" (valueChanged)="phiChanged($event)" (inputChanged)="phiChanged($event)"></app-slider>
+          </div>
+          <div class="toggle">
+            <app-slider-toggle checked="false" (toggleChange)="toggleChanged($event)"></app-slider-toggle>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="container">
+      <app-lissajous-chart class="chart" [A]="A" [B]="B" [data]="data"></app-lissajous-chart>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

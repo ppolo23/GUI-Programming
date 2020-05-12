@@ -1,0 +1,24 @@
+
+.footerList {
+    background: #7b1fa2;
+    color: white;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+.footerLogo{
+    position: absolute;
+    left: 50px;
+}
+
+.footerLogo > span{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 20px;
+    vertical-align: bottom;
+}
+
+.version .copyright{
+    font-size: 14px;
+}
