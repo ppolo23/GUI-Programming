@@ -18,7 +18,7 @@ The development of this feature might requires this parts:
 
 - **Backend**. A backend that provides a layer of security for the operations and data of the system, manages the creation of logs and traces to monitor transactions, and allows connectivity with banking technologies.
 
-![POC Schema](Schema.png)
+![POC Schema](Resources/Schema.png)
 
 # 2.- Exercice 1 - Thoughts, ideas about tech and architecture with this context.
 
